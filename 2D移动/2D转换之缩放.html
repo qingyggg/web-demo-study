@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            margin: 100px auto;
+        }
+        div:hover{
+            /* 里面写数字不跟单位，1是1倍，2是两倍*/
+            /* transform: scale(2,2); */
+            /* 简写的方法：以下宽度修改两倍，高度和第一个一样 */
+            /* transform: scale(2); */
+            /* 我们可以进行缩小 小于1 就是缩放 */
+            transform: scale(0.5);
+            /* 优点：1.不影响其他的盒子。2.可以设置中心点 */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<!-- 同时有位移和其他属性，要把位移放到最前面 -->

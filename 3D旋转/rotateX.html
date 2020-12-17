@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 200px;
+        }
+        img{
+            display: block;
+            margin: 100px auto;
+            transition: all 0.5s;
+        }
+        img:hover{
+            /* transform无论怎样变换，都不会脱离标准流，还是会占据原来的位置 */
+            transform: rotateX(45deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="../css3动画使用/media/pig.jpg" alt="">
+    <div></div>
+</body>
+</html>

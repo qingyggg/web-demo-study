@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 700px;
+        }
+        img{
+            display: block;
+            margin: 100px auto;
+            transition: all 0.5s;
+        }
+        img:hover{
+            /* 手指正方向旋转的是正值，反方向是负值 */
+            transform: rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="../css3动画使用/media/pig.jpg" alt="">
+</body>
+</html>

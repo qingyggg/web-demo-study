@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* 透视写到被观察元素的父盒子上面 ，模拟人的眼睛距离物体的距离*/
+            perspective: 600px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color:pink;
+            /* transform: translateX(100px) translateY(100px) translateZ(100px); */
+            /* 3D移动的简写方法 */
+            transform: translate3d(400px,100px,100px);
+            /* translate不会影响其他盒子的位置 */
+            /* x,y,z是不能省略的，如果没有就写0 */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

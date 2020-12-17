@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            from{
+                transform:scale(1);
+                background-color: pink;
+            }            
+            to{
+                transform: scale(3,1);
+                background-color:rgba(228, 60, 88, 0.589);
+            }
+        }
+        /* 动画序列 */
+        .a{
+            width: 100px;
+            height: 100px;
+            background-color:pink(228, 60, 88, 0.589);
+            animation-name: move;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: 10;
+            font-size: 20px;
+            margin: 100px 0;
+            transform-origin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a"></div>
+</body>
+</html>
