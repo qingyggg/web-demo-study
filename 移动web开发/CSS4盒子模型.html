@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(1){
+            /* 结构伪类选择器 */
+            /* 传统盒子模型=width+borderpadding */
+            width: 200px;
+            height: 200px;
+            background: pink;
+            padding: 10px;
+            border:10px solid red;
+            /* 传统盒子模型 */
+            box-sizing: content-box;
+        }
+        div:nth-child(2){
+            /* 有了这句话就让盒子变成css3盒子模型 */
+            /* padding和border不会撑大盒子了 */
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            background: purple;
+            padding: 10px;
+            /* 当盒子只指定了一个宽度或高度，内边距不会撑大盒子 */
+            /* 当在子盒子里设置外边距，如果外边距值比父元素的外边距还大，则父元素外边距会塌陷于子元素外边距，父盒子就会被撑大*/
+            /* 浮动，绝对，固定定位的盒子不会存在外边距塌陷问题 */
+            border:10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+</body>
+</html>
